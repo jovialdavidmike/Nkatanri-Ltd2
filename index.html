@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nkatanri - Global Commodity Trade Platform</title>
+    <meta name="description" content="The Abuja Standard: Global Sourcing, Verified Quality. Premium exporter of Ginger, Cashews, Cocoa, and Hibiscus to UAE, Europe, India, and USA.">
+    <meta name="keywords" content="Ginger Export Nigeria, Cashew Nuts W240 W320, Cocoa Beans Grade A, Dried Hibiscus Flower, Global Procurement, Agro Export Nigeria">
+    <link rel="icon" href="assets/favicon.png" />
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: {
+                DEFAULT: '#b08b47',
+                400: '#c4a364',
+                500: '#b08b47',
+                600: '#96753a',
+              },
+              forest: {
+                DEFAULT: '#022c1f',
+                800: '#033828',
+                900: '#022c1f',
+                950: '#011c14',
+              },
+              mint: {
+                DEFAULT: '#a4d5c2',
+                100: '#e6f5f0',
+                500: '#a4d5c2',
+              }
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['"Inter"', 'sans-serif'],
+              mono: ['"JetBrains Mono"', 'monospace'],
+            },
+            backgroundImage: {
+              'grid-pattern': "linear-gradient(to right, #022c1f 1px, transparent 1px), linear-gradient(to bottom, #022c1f 1px, transparent 1px)",
+            }
+          }
+        }
+      }
+    </script>
+    
+    <!-- Custom Styles -->
+    <style>
+      body {
+        background-color: #ffffff;
+        color: #022c1f;
+      }
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(2, 44, 31, 0.1);
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@^19.2.3",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "framer-motion": "https://esm.sh/framer-motion@^12.29.0",
+        "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+      }
+    }
+    </script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="font-sans antialiased selection:bg-gold-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+    <script>
+      // Initialize Lucide icons if any are outside React (none expected, but good safety)
+      if (window.lucide) window.lucide.createIcons();
+    </script>
+</body>
+</html>
